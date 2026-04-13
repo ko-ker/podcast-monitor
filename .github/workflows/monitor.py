@@ -9,7 +9,7 @@ import os
 RSS_FEED = "https://anchor.fm/s/260e5c24/podcast/rss"
 YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@kevinsenglishroompodcast3408/videos"
 
-TARGET_EMAIL = "kevinofker@gmail.com"
+TARGET_EMAIL = os.environ.get("TARGET_EMAIL")
 
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL")
 SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD")
