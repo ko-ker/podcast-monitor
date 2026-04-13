@@ -6,8 +6,8 @@ import requests
 from bs4 import BeautifulSoup
 import os
 
-RSS_FEED = "https://anchor.fm/s/260e5c24/podcast/rss"
-YOUTUBE_CHANNEL_URL = "https://www.youtube.com/@kevinsenglishroompodcast3408/videos"
+RSS_FEED = os.environ.get("RSS_FEED")
+YOUTUBE_CHANNEL_URL = os.environ.get("YOUTUBE_CHANNEL_URL")
 
 TARGET_EMAIL = os.environ.get("TARGET_EMAIL")
 
